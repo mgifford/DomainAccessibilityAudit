@@ -172,7 +172,7 @@ docker exec -i domainaccessibilityaudit_mongodb_1 sh -c 'exec mongorestore --nsI
 ## Technologies used
 - [axe](https://github.com/dequelabs/axe-core)
 - [Selenium WebDriver](https://www.seleniumhq.org/projects/webdriver/)
-- [axe-webdriverjs](https://github.com/dequelabs/axe-webdriverjs)
+- [@axe-core/webdriverjs](https://www.npmjs.com/package/@axe-core/webdriverjs)
 - [Passport](http://www.passportjs.org/)
 - [Passport-SAML](https://github.com/bergie/passport-saml)
 - [Docker](https://www.docker.com/)
