@@ -1,5 +1,5 @@
 import WebDriver from 'selenium-webdriver';
-import AxeBuilder from 'axe-webdriverjs';
+import AxeBuilder from '@axe-core/webdriverjs';
 import firefox from 'selenium-webdriver/firefox';
 import chrome from 'selenium-webdriver/chrome';
 
