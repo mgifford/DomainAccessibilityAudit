@@ -8,12 +8,14 @@ services:
       args:
         NODE_USER_UID: ${NODE_USER_UID-1000}
         NODE_USER_GID: ${NODE_USER_GID-1000}
+    container_name: accessibility_audit
     environment:
       DB_URL: mongodb://mongodb:27017/accessibility_audit
       TZ: America/Detroit
       CHOKIDAR_USEPOLLING: 'true'
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       NODE_OPTIONS: '--http-parser=legacy --insecure-http-parser'
+      ADMIN_USERNAME: ${ADMIN_USERNAME}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
       NODE_ENV: ${MODE-production}
       SAML_ENTRYPOINT: ${SAML_ENTRYPOINT-}
